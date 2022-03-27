@@ -14,5 +14,8 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    // return $router->app->version();
+    return 'welcome';
 });
+
+$router->post('validate', 'AuthController@validate_token');
